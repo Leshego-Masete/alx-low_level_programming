@@ -2,9 +2,9 @@
 
 
 /**
- * main -entry point for the program
+ * main-entry point for the program
  *
- * Return: Always zero if theres no error, return non zero value if theres an error
+ * Return:Always zero , return non zero value if there is an error
  */
 
 int main(void)
