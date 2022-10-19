@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i;
-	char hexvalue[] = "0123456789abcdef";
+	char hexvalues[] = "0123456789abcdef";
 
 	for (i = 0; i < 16; i++)
 	{
