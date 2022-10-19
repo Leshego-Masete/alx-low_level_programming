@@ -2,7 +2,7 @@
 
 
 /**
- * main-Prints Holberton as a messge.
+ * main-Prints Holberton as a message.
  * Return:0(success), non-zero value error.
  */
 int main(void)
