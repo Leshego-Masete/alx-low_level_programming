@@ -9,12 +9,12 @@
 int _abs(int a)
 {
 	int k = a;
-	int absolute;
+	int absvalue;
 
 
 	if (k < 0)
 	{k = k * (-1);
 	}
-	absolute = k;
+	absvalue = k;
 	return (absvalue);
 }
