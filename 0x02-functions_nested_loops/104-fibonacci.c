@@ -37,4 +37,6 @@ int main(void)
 			fn = n1 + n2 + (fn2 / 1000000000);
 			printf(", %ld", fn);
 			printf("%ld", fn2 % 1000000000);
-
+		}
+	}
+}
