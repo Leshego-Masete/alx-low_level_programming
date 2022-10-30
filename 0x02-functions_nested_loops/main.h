@@ -1,16 +1,45 @@
 #ifndef main_h
 #define main_h
-extern int _putchar(char c);
-extern void print_alphabet(void);
-extern void print_alphabet_x10(void);
-extern int _islower(int c);
-extern int _isalpha(int c);
-extern int print_sign(int n);
-extern int _abs(int);
-extern int print_last_digit(int);
-extern void jack_bauer(void);
-extern void times_table(void);
-extern int add(int, int);
-extern void print_to_98(int n);
-extern void print_times_table(int n);
+
+/* _putchar.c */
+int _putchar(char c);
+
+/* 1-alphabet.c */
+void print_alphabet(void);
+
+/* 2-print_alphabet_x10.c */
+void print_alphabet_x10(void);
+
+/* 3-islower.c */
+int _islower(int);
+
+/* 4-alpha.c */
+int _isalpha(int);
+
+/* 5-sign.c */
+int print_sign(int);
+
+/* 6-abs.c */
+int _abs(int);
+
+/* 7-print_last_digit.c */
+int print_last_digit(int);
+
+/* 8-24_hours.c */
+void jack_bauer(void);
+
+/* 9-times_table.c */
+void times_table(void);
+
+/* 10-add.c */
+int add(int, int);
+
+/* 11-print_to_98.c */
+void print_to_98(int);
+
+/* 100-times_table.c*/
+void print_times_table(int);
+
+
 #endif
+
