@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main-program entry point.
- * Return:zero if no error, non-zero value if there is an error.
+ *main-program entry point.
+ *Return:0 if no error, non zero if error.
  */
-
 int main(void)
 {
 	char i;
@@ -13,7 +12,7 @@ int main(void)
 	{
 		if (i == 'e' || i == 'q')
 			continue;
-		putchar('\n');
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);

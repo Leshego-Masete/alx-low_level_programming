@@ -1,10 +1,7 @@
 #include <stdio.h>
-
-
 /**
- *
- * main-entry point of the program.
- * Return:Always zero, non-zero on error.
+ *main-program entry point.
+ *Return:0 success, non zero error.
  */
 int main(void)
 {
@@ -15,12 +12,13 @@ int main(void)
 		putchar(num);
 		if (num == '9')
 		{
-	break;
+			break;
 		}
-	else
-	{
-		putchar(',');
-	}
+		else
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);

@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
- * main-entry point of the program.
- * Return:Always zero, non-zero value if there is an error.
+ *main-program entry point.
+ *Return:0 no error, non zero if error
  */
 int main(void)
 {
 	char i;
 
-	for (i = 'o'; i <= '9'; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
 		putchar(i);
 	}

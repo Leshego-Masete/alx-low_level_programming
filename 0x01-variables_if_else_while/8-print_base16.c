@@ -1,10 +1,7 @@
 #include <stdio.h>
-
-
 /**
- *
- * main-entry point of the program.
- * Return:Always zero, otherwise non-zero if there is error.
+ * main-program entry point.
+ * Return: 0 if no error, non zero if error.
  */
 int main(void)
 {
