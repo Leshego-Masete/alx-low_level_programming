@@ -1,25 +1,27 @@
-#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 
 /**
- * main-prints the multiplication of two integers
+ * main-Entry point
  * @argc:arguments count
  * @argv:arguments vector
  *
- * Return:0 if true, 1 if false
+ * Return:success
  */
-int main(int argc, char *argc[])
+int main(int argc, char *argv])
 {
-	int a, b;
+	int result = 1, i;
 
 	if (argc == 3)
 	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
-		printf("%d\n", a *b);
-		return (0);
+		for (i = 1; i < argc; i++)
+			result = result * strtol(argv[i], NULL, 10);
+		printf('%d\n', result);
 	}
+	else
+	{
 	printf("Error\n");
 	return (1);
+}
+return (0);
 }
