@@ -1,60 +1,54 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
 
+int is_number(char *str);
 /**
- * check_num-checks string with digit
- * @str:array str
+ * main-Entry point
+ * @argc:arguments count
+ * @argv:arguments vector
  *
  * Return:always 0 (success)
  */
-
-int check_num(char *str)
+int main(int argc, char *argv[])
 {
-	/*Declaring variables*/
-	unsigned int count;
+	int result = 0, i;
 
-	count = 0;
-	while(count < strlen(str)) /*count string*/
+	if (argc > 1)
 	{
-		if (!isdigit(str[count])) /*check if strhave digit*/
+		for (i = 1; i < argc; i++)
 		{
-	
-			return (0);
-		}
-		count++;
-	}
-	/**
-	 * main-print the name of the program
-	 * @argc:count arguments
-	 * @argv:arguments
-	 *
-	 * Return:always 0 (success)
-	 */
-	int main(int argc, char *argv[])
-	{
-		/*Declaring variables*/
-		int count;
-		int str_to_int;
-		int sum = 0;
-
-		count = 1;
-		while (count < argc) /*Goes through the whole array*/
-		{
-			if (check_num(argv[count]))
+			if (is_number(argv[i]) == 1)
 			{
-				str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
-				sum += str_to_int;
-			}
-			/*Condition if one of the number contains symbols that are not digits*/
-			else
-			{
-				printf("Error\n");
+				ptintf("Error\n");
 				return (1);
 			}
-			count++;
+			else
+				resilt += strtol(argv[i], NULL, 10);
 		}
-		printf("%d\n", sum); /*print sum*/
+		printf("%d\n", result);
+	}
+	else
+	{
+		printf("0\n");
+		return (0);
+		exit(EXIT_SUCCESS);
+	}
+	/**
+	 * is_number-checks if a character is a number
+	 * @str:param to check
+	 *
+	 * Return:0 if true else 1
+	 */
+	int is_number(char *str)
+	{
+		int i = 0;
+		if (str[0] == '-')
+			i = 1;
+		
+		for (; str[i]; i++)
+		{
+			if (*(str + i) < '0' || * (str + i) > '9')
+				return (1);
+		}
 		return (0);
 	}
