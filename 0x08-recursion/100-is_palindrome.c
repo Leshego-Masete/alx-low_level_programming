@@ -39,4 +39,4 @@ int comparator(char *s, int n1, int n2)
 				if (*s == '\0')
 				return (1);
 				return (comparator(s, 0, _strlen_recursion(s) - 1));
-				}	
+				}
